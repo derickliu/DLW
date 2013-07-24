@@ -18,6 +18,12 @@
 		296B5042179F8F9100F403BD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 296B5041179F8F9100F403BD /* Default@2x.png */; };
 		296B5044179F8F9100F403BD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 296B5043179F8F9100F403BD /* Default-568h@2x.png */; };
 		296B5047179F8F9100F403BD /* LW.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 296B5045179F8F9100F403BD /* LW.xcdatamodeld */; };
+		296B5054179F929A00F403BD /* DLRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296B5052179F929A00F403BD /* DLRootViewController.m */; };
+		296B5055179F929A00F403BD /* DLRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296B5053179F929A00F403BD /* DLRootViewController.xib */; };
+		296B5059179F92BD00F403BD /* DLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296B5057179F92BD00F403BD /* DLHomeViewController.m */; };
+		296B505A179F92BD00F403BD /* DLHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296B5058179F92BD00F403BD /* DLHomeViewController.xib */; };
+		296B505E179F92D500F403BD /* DLSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296B505C179F92D500F403BD /* DLSettingsViewController.m */; };
+		296B505F179F92D500F403BD /* DLSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296B505D179F92D500F403BD /* DLSettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,15 @@
 		296B5041179F8F9100F403BD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		296B5043179F8F9100F403BD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		296B5046179F8F9100F403BD /* LW.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LW.xcdatamodel; sourceTree = "<group>"; };
+		296B5051179F929A00F403BD /* DLRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRootViewController.h; sourceTree = "<group>"; };
+		296B5052179F929A00F403BD /* DLRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRootViewController.m; sourceTree = "<group>"; };
+		296B5053179F929A00F403BD /* DLRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLRootViewController.xib; sourceTree = "<group>"; };
+		296B5056179F92BD00F403BD /* DLHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLHomeViewController.h; sourceTree = "<group>"; };
+		296B5057179F92BD00F403BD /* DLHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLHomeViewController.m; sourceTree = "<group>"; };
+		296B5058179F92BD00F403BD /* DLHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLHomeViewController.xib; sourceTree = "<group>"; };
+		296B505B179F92D500F403BD /* DLSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSettingsViewController.h; sourceTree = "<group>"; };
+		296B505C179F92D500F403BD /* DLSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSettingsViewController.m; sourceTree = "<group>"; };
+		296B505D179F92D500F403BD /* DLSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLSettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +128,9 @@
 		296B504D179F909800F403BD /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				296B5051179F929A00F403BD /* DLRootViewController.h */,
+				296B5052179F929A00F403BD /* DLRootViewController.m */,
+				296B5053179F929A00F403BD /* DLRootViewController.xib */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -120,6 +138,9 @@
 		296B504E179F909800F403BD /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				296B5056179F92BD00F403BD /* DLHomeViewController.h */,
+				296B5057179F92BD00F403BD /* DLHomeViewController.m */,
+				296B5058179F92BD00F403BD /* DLHomeViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -134,6 +155,9 @@
 		296B5050179F909800F403BD /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				296B505B179F92D500F403BD /* DLSettingsViewController.h */,
+				296B505C179F92D500F403BD /* DLSettingsViewController.m */,
+				296B505D179F92D500F403BD /* DLSettingsViewController.xib */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -194,6 +218,9 @@
 				296B5040179F8F9100F403BD /* Default.png in Resources */,
 				296B5042179F8F9100F403BD /* Default@2x.png in Resources */,
 				296B5044179F8F9100F403BD /* Default-568h@2x.png in Resources */,
+				296B5055179F929A00F403BD /* DLRootViewController.xib in Resources */,
+				296B505A179F92BD00F403BD /* DLHomeViewController.xib in Resources */,
+				296B505F179F92D500F403BD /* DLSettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +234,9 @@
 				296B503A179F8F9100F403BD /* main.m in Sources */,
 				296B503E179F8F9100F403BD /* DLAppDelegate.m in Sources */,
 				296B5047179F8F9100F403BD /* LW.xcdatamodeld in Sources */,
+				296B5054179F929A00F403BD /* DLRootViewController.m in Sources */,
+				296B5059179F92BD00F403BD /* DLHomeViewController.m in Sources */,
+				296B505E179F92D500F403BD /* DLSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
