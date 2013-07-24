@@ -84,6 +84,10 @@
 		296B5033179F8F9100F403BD /* LW */ = {
 			isa = PBXGroup;
 			children = (
+				296B504D179F909800F403BD /* Global */,
+				296B504E179F909800F403BD /* Home */,
+				296B504F179F909800F403BD /* Images */,
+				296B5050179F909800F403BD /* Settings */,
 				296B503C179F8F9100F403BD /* DLAppDelegate.h */,
 				296B503D179F8F9100F403BD /* DLAppDelegate.m */,
 				296B5045179F8F9100F403BD /* LW.xcdatamodeld */,
@@ -104,6 +108,34 @@
 				296B5043179F8F9100F403BD /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		296B504D179F909800F403BD /* Global */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		296B504E179F909800F403BD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		296B504F179F909800F403BD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		296B5050179F909800F403BD /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
