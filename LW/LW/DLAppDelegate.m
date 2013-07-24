@@ -7,6 +7,10 @@
 //
 
 #import "DLAppDelegate.h"
+#import "MMDrawerController.h"
+#import "MMDrawerVisualState.h"
+#import "DLHomeViewController.h"
+#import "DLSettingsViewController.h"
 
 @implementation DLAppDelegate
 
@@ -18,6 +22,29 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    UIViewController * leftSideDrawerViewController = [[DLSettingsViewController alloc] init];
+    
+    UIViewController * centerViewController = [[DLHomeViewController alloc] init];
+    
+    UIViewController * rightSideDrawerViewController = [[UIViewController alloc] init];
+    
+    UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:centerViewController];
+    
+    MMDrawerController * drawerController = [[MMDrawerController alloc]
+                                             initWithCenterViewController:navigationController
+                                             leftDrawerViewController:leftSideDrawerViewController
+                                             rightDrawerViewController:rightSideDrawerViewController];
+    [drawerController setMaximumRightDrawerWidth:200.0];
+    [drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    
+    [drawerController
+     setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+         
+     }];
+    
+    
+    self.window.rootViewController = drawerController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
