@@ -24,6 +24,11 @@
 		296B505A179F92BD00F403BD /* DLHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296B5058179F92BD00F403BD /* DLHomeViewController.xib */; };
 		296B505E179F92D500F403BD /* DLSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296B505C179F92D500F403BD /* DLSettingsViewController.m */; };
 		296B505F179F92D500F403BD /* DLSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296B505D179F92D500F403BD /* DLSettingsViewController.xib */; };
+		296B5069179FB5EF00F403BD /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 296B5062179FB5EF00F403BD /* MMDrawerBarButtonItem.m */; };
+		296B506A179FB5EF00F403BD /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296B5064179FB5EF00F403BD /* MMDrawerController.m */; };
+		296B506B179FB5EF00F403BD /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 296B5066179FB5EF00F403BD /* MMDrawerVisualState.m */; };
+		296B506C179FB5EF00F403BD /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296B5068179FB5EF00F403BD /* UIViewController+MMDrawerController.m */; };
+		296B506E179FB8DB00F403BD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 296B506D179FB8DB00F403BD /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +56,15 @@
 		296B505B179F92D500F403BD /* DLSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSettingsViewController.h; sourceTree = "<group>"; };
 		296B505C179F92D500F403BD /* DLSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSettingsViewController.m; sourceTree = "<group>"; };
 		296B505D179F92D500F403BD /* DLSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLSettingsViewController.xib; sourceTree = "<group>"; };
+		296B5061179FB5EF00F403BD /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		296B5062179FB5EF00F403BD /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		296B5063179FB5EF00F403BD /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		296B5064179FB5EF00F403BD /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		296B5065179FB5EF00F403BD /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		296B5066179FB5EF00F403BD /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		296B5067179FB5EF00F403BD /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		296B5068179FB5EF00F403BD /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		296B506D179FB8DB00F403BD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				296B506E179FB8DB00F403BD /* QuartzCore.framework in Frameworks */,
 				296B502C179F8F9100F403BD /* UIKit.framework in Frameworks */,
 				296B502E179F8F9100F403BD /* Foundation.framework in Frameworks */,
 				296B5030179F8F9100F403BD /* CoreGraphics.framework in Frameworks */,
@@ -88,6 +103,7 @@
 		296B502A179F8F9100F403BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				296B506D179FB8DB00F403BD /* QuartzCore.framework */,
 				296B502B179F8F9100F403BD /* UIKit.framework */,
 				296B502D179F8F9100F403BD /* Foundation.framework */,
 				296B502F179F8F9100F403BD /* CoreGraphics.framework */,
@@ -99,6 +115,7 @@
 		296B5033179F8F9100F403BD /* LW */ = {
 			isa = PBXGroup;
 			children = (
+				296B5060179FB5EF00F403BD /* MMDrawerController */,
 				296B504D179F909800F403BD /* Global */,
 				296B504E179F909800F403BD /* Home */,
 				296B504F179F909800F403BD /* Images */,
@@ -160,6 +177,21 @@
 				296B505D179F92D500F403BD /* DLSettingsViewController.xib */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		296B5060179FB5EF00F403BD /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				296B5061179FB5EF00F403BD /* MMDrawerBarButtonItem.h */,
+				296B5062179FB5EF00F403BD /* MMDrawerBarButtonItem.m */,
+				296B5063179FB5EF00F403BD /* MMDrawerController.h */,
+				296B5064179FB5EF00F403BD /* MMDrawerController.m */,
+				296B5065179FB5EF00F403BD /* MMDrawerVisualState.h */,
+				296B5066179FB5EF00F403BD /* MMDrawerVisualState.m */,
+				296B5067179FB5EF00F403BD /* UIViewController+MMDrawerController.h */,
+				296B5068179FB5EF00F403BD /* UIViewController+MMDrawerController.m */,
+			);
+			path = MMDrawerController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +269,10 @@
 				296B5054179F929A00F403BD /* DLRootViewController.m in Sources */,
 				296B5059179F92BD00F403BD /* DLHomeViewController.m in Sources */,
 				296B505E179F92D500F403BD /* DLSettingsViewController.m in Sources */,
+				296B5069179FB5EF00F403BD /* MMDrawerBarButtonItem.m in Sources */,
+				296B506A179FB5EF00F403BD /* MMDrawerController.m in Sources */,
+				296B506B179FB5EF00F403BD /* MMDrawerVisualState.m in Sources */,
+				296B506C179FB5EF00F403BD /* UIViewController+MMDrawerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +387,7 @@
 				296B504C179F8F9100F403BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
